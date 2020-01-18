@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.frame{
+    width: 450px;
+    height: 600px;
+}
+
+body{
+    background: url('./img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.chat{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px 25px;
+    border: 2px solid;
+    border-radius: 64px;
+    border-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.player{
+    background-blend-mode: overlay;
+}
+
+.artist{
+    color: #fff;
+}
+
+.melodie{
+    color:#fff;
+}
+
+.nsong{
+    color: #fff;
+}
+
+.listaTrecuta{
+    color: rgba(58, 29, 29, 0.7)
+}
+
+.psongs{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 25px;
+    border-radius: 16px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.row.lin1{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 25px;
+    border-radius: 16px;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+
+
+hr.new{ /* Not really supposed to work, but does */
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1px;
+}
