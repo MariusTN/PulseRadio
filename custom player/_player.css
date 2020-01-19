@@ -1,0 +1,309 @@
+.fa-square{
+    -webkit-animation:spin 12s linear infinite;
+    -moz-animation:spin 12s linear infinite;
+    animation:spin 12s linear infinite;
+}
+
+.fa-volume-mute{
+    font-size: 36px;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.fa-volume-up{
+    font-size: 36px;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.player {
+    position: relative;
+    width: 800px;
+    height: 160px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    border-radius: 2px;
+    padding: 5 16px;
+}
+.btn-play{
+    font-size: 36px;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+
+.info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 50%;
+    padding: 0 16px;
+}
+    .artist1 {
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .melodie1 {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .nsong1 {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+.btns {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 376px) { 
+
+    .player{
+        position: relative;
+        width: 400px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        padding: 5 4px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center
+    }
+
+    .btns {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    .info {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        width: 90%;
+        padding: 0 16px;
+    }
+        .artist {
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.7);
+            flex: 0 0 auto;
+            margin: 10px;
+        }
+    
+        .melodie {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            flex: 0 0 auto;
+            margin: 10px;
+        }
+        .nsong {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            flex: 0 0 auto;
+            margin: 10px;
+        }
+
+        .fa-volume-mute{
+            
+            font-size: 20px;
+            color: #fff;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px;
+        }
+        
+        .fa-volume-up{
+            
+            font-size: 20px;
+            color: #fff;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px;
+        }
+        .btn-play{
+            
+            font-size: 20px;
+            color: #fff;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px;
+          }
+ }
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .player{
+        position: relative;
+        width: 500px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        border-radius: 2px;
+        padding: 5 16px;
+} 
+
+.fa-volume-mute{
+            
+    font-size: 24px;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.fa-volume-up{
+    
+    font-size: 24px;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+.btn-play{
+    
+    font-size: 24px;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    .player{
+        position: relative;
+        width: 700px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        border-radius: 2px;
+        padding: 5 16px;
+    }
+
+    .fa-volume-mute{
+            
+        font-size: 28px;
+        color: #fff;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+    
+    .fa-volume-up{
+        
+        font-size: 28px;
+        color: #fff;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+    .btn-play{
+        
+        font-size: 28px;
+        color: #fff;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+      }
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+   .player {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 2px;
+    padding: 5 16px;
+    }
+
+    .fa-volume-mute{
+        font-size: 36px;
+        color: #fff;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+    
+    .fa-volume-up{
+        
+        font-size: 36px;
+        color: #fff;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+    .btn-play{
+        font-size: 36px;
+        color: #fff;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+      }
+
+ }

@@ -1,5 +1,7 @@
 let titluMelodie = document.getElementsByClassName('melodie')[0];
 let titluArtist = document.getElementsByClassName('artist')[0];
+let titluMelodie2 = document.getElementsByClassName('melodie1')[0];
+let titluArtist2 = document.getElementsByClassName('artist1')[0];
 let nextSong = document.getElementsByClassName('nsong')[0];
 let pastSong1 = document.getElementsByClassName('ps1')[0]
 let pastSong2 = document.getElementsByClassName('ps2')[0]
@@ -28,7 +30,12 @@ async function fetchStarship() {
 	pastSong7.innerHTML = `${data.songs[6][0]} : ${data.songs[6][1]}`;
 	pastSong8.innerHTML = `${data.songs[7][0]} : ${data.songs[7][1]}`;
 	pastSong9.innerHTML = `${data.songs[8][0]} : ${data.songs[8][1]}`;
-	console.log(data);
 }
 
 setInterval(fetchStarship, 5000); 
+
+//custom Particles
+
+particlesJS.load('particles-js', './json/particlesjs-config.json', function() {
+	console.log('callback - particles.js config loaded');
+  });

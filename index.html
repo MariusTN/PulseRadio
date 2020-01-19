@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+  <script src="https://kit.fontawesome.com/4f9df9b40d.js" crossorigin="anonymous"></script>
+
   <!-- BOOTSTRAP LOAD -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -18,18 +19,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
-<link href="./css.css" rel="stylesheet" type="text/css">
-
+  <link href="./css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./custom player/_player.css">
 
   <title>Pulse Musification</title>
 
 </head>
 
-<body>
+<body class="bg">
   <nav class="navbar navbar-dark bg-dark justify-content-center d-flex fixed-top">
     <a class="navbar-brand text-center" href="#">Pulse Musification</a>
   </nav>
-
+  <div id="particles-js"></div>
 
   <div class="container">
     <div class="row lin1">
@@ -37,38 +38,58 @@
       <div class=".col-xl-3 .col-lg-3 .col-md-3 .col-sm-3 m-3 p-5 mx-auto d-flex align-items-center">
 
         <div class="main-text">
-          <audio autoplay="autoplay" preload="none" type="audio/mpeg" controls src="http://listen1.myradio24.com:9000/78810">Your browser does not support this player, please update the version</audio>
-          <div class="artist">Artist</div>
-          <div class="melodie">Melodie</div>
-          <div class="nsong">Next Song</div>
+          <audio class='wilsonNuVeziAsta' autoplay="autoplay" preload="none" type="audio/mpeg"
+            src="http://listen1.myradio24.com:9000/78810">Your
+            browser does not support this player, please update the version</audio>
+          <div class="player ">
+            <img />
+            <div class="info">
+              <div class="melodie">UPDATING...</div>
+              <div class="artist">UPDATING...</div>
+              <div class="nsong">UPDATING...</div>
+            </div>
+            <div class="btns">
+              <div class="iconfont "><span class="btn-play"><i class="fas play-pause fa-play"></i></span></div>
+              <div class="iconfont "><span class="btn-play"></span><i class="fas volume-muted fa-volume-up"></i></span>
+              </div>
+              <input id="slider" type="range" min="0" max="1" step="0.01" onchange="setVal(value)" value="1" />
+            </div>
+
+
+          </div>
         </div>
-      </div>
-      <div class="listaTrecuta .col-xl-4 .col-lg-4 .col-md-4 .col-sm-4 mx-auto text-left">
-        <div class="psongs">
-          <div class="pss">Past 10 Songs on Radio</div>
-          <hr class="new">
-          <div class="ps0">UPDATING...</div>
-          <div class="ps9">UPDATING...</div>
-          <div class="ps8">UPDATING...</div>
-          <div class="ps7">UPDATING...</div>
-          <div class="ps6">UPDATING...</div>
-          <div class="ps5">UPDATING...</div>
-          <div class="ps4">UPDATING...</div>
-          <div class="ps3">UPDATING...</div>
-          <div class="ps2">UPDATING...</div>
-          <div class="ps1">UPDATING...</div>
-        </div>
-      </div>
-    </div>
-    <!-- CHAT EMBED -->
-    <div class="row">
-      <div class=".col-xl-4 .col-lg-4 .col-md-4 .col-sm-4 p-5 m-2 mx-auto framex">
-        <div class="chat">
-          <iframe class="frame"
-            src="https://www.youtube.com/live_chat?v=dRtY9_vpnhw&amp;embed_domain=pulsemusification.com"></iframe>
-        </div>
+        <!-- END OF PLAYER MARKUP -->
       </div>
     </div>
+    <div class="listaTrecuta .col-xl-4 .col-lg-4 .col-md-4 .col-sm-4 mx-auto">
+      <div class="psongs">
+        <div class="pss">Past 10 Songs on Radio</div>
+        <hr class="new">
+        <div class="ps0">UPDATING...</div>
+        <div class="ps9">UPDATING...</div>
+        <div class="ps8">UPDATING...</div>
+        <div class="ps7">UPDATING...</div>
+        <div class="ps6">UPDATING...</div>
+        <div class="ps5">UPDATING...</div>
+        <div class="ps4">UPDATING...</div>
+        <div class="ps3">UPDATING...</div>
+        <div class="ps2">UPDATING...</div>
+        <div class="ps1">UPDATING...</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CHAT EMBED -->
+  <div class="row">
+    <div class=".col-xl-4 .col-lg-4 .col-md-4 .col-sm-4 p-5 m-2 mx-auto framex">
+      <div class="chat">
+        <iframe class="frame"
+          src="https://www.youtube.com/live_chat?v=dRtY9_vpnhw&amp;embed_domain=pulsemusification.com" target="_parent">
+          Your device is not supporting iframe. <br> Change to DESKTOP MODE in your mobile browser!</iframe>
+      </div>
+    </div>
+  </div>
 
 
   </div>
@@ -84,7 +105,8 @@
   </footer>
 
   <!-- NO TOUCH -->
-
+  <script src="./js/particles.js"></script>
+  <script src="./custom player/_player.js"></script>
   <script src="./js.js"></script>
 
 </body>
