@@ -36,6 +36,6 @@ setInterval(fetchStarship, 5000);
 
 //custom Particles
 
-particlesJS.load('particles-js', './json/particlesjs-config.json', function() {
-	console.log('callback - particles.js config loaded');
+particlesJS.load('particles-js', './particlesjs-config.json', function() {
+	console.log('Particles Loaded');
   });

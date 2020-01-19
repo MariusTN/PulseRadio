@@ -30,8 +30,6 @@ $(
     $('.volume-muted').on('click', function setVal(volume) {
       audeo.volume = volume;
       vol = volume;
-      console.log('volum inside ', audeo.volume);
-      console.log("vol inside", vol)
     })
 
 

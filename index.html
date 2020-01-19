@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/4f9df9b40d.js" crossorigin="anonymous"></script>
-
-  <!-- BOOTSTRAP LOAD -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
   </script>
@@ -27,21 +25,23 @@
 </head>
 
 <body class="bg">
+  <div id="particles-js"></div>
+
   <nav class="navbar navbar-dark bg-dark justify-content-center d-flex fixed-top">
     <a class="navbar-brand text-center" href="#">Pulse Musification</a>
   </nav>
-  <div id="particles-js"></div>
+  
 
   <div class="container">
     <div class="row lin1">
-      <!-- MUSIC PLAYER -->
       <div class=".col-xl-3 .col-lg-3 .col-md-3 .col-sm-3 m-3 p-5 mx-auto d-flex align-items-center">
 
         <div class="main-text">
           <audio class='wilsonNuVeziAsta' autoplay="autoplay" preload="none" type="audio/mpeg"
             src="http://listen1.myradio24.com:9000/78810">Your
             browser does not support this player, please update the version</audio>
-          <div class="player ">
+          
+            <div class="player ">
             <img />
             <div class="info">
               <div class="melodie">UPDATING...</div>
@@ -58,7 +58,6 @@
 
           </div>
         </div>
-        <!-- END OF PLAYER MARKUP -->
       </div>
     </div>
     <div class="listaTrecuta .col-xl-4 .col-lg-4 .col-md-4 .col-sm-4 mx-auto">
@@ -78,9 +77,6 @@
       </div>
     </div>
   </div>
-
-
-  <!-- CHAT EMBED -->
   <div class="row">
     <div class=".col-xl-4 .col-lg-4 .col-md-4 .col-sm-4 p-5 m-2 mx-auto framex">
       <div class="chat">
@@ -93,7 +89,6 @@
 
 
   </div>
-  <!-- END OF CONTAINER BODY -->
   </div>
 
 
@@ -105,10 +100,11 @@
   </footer>
 
   <!-- NO TOUCH -->
-  <script src="./js/particles.js"></script>
+
   <script src="./custom player/_player.js"></script>
+  <script src="./js/particles.js"></script>
   <script src="./js.js"></script>
 
-</body>
 
+</body>
 </html>
