@@ -53,7 +53,6 @@ header a {
 .container {
   padding: 3rem;
   margin: 0 auto;
-  max-width: 70%;
 }
 
 .player {
@@ -101,7 +100,6 @@ header a {
 }
 
 .middle {
-  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -211,9 +209,18 @@ footer a {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1201px) {
+  .container {
+    width: 50%;
+  }
+  .middle {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .container {
-    width: 100%;
+    width: 70%;
     margin: 0.4rem auto;
     padding: 0;
     max-height: 30%;
@@ -225,9 +232,7 @@ footer a {
     font-size: 1.4rem;
   }
   .middle {
-    width: auto;
-    min-height: 60%;
-    max-height: 70%;
+    width: 80%;
   }
   .middle .pss {
     font-size: 1.5rem;
@@ -237,9 +242,9 @@ footer a {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .container {
-    width: 100%;
+    width: 90%;
     margin: 0.4rem auto;
     padding: 0;
     max-height: 30%;
@@ -253,8 +258,8 @@ footer a {
   .middle {
     font-size: 1rem;
     width: auto;
-    min-height: 60%;
-    max-height: 70%;
+    height: 60%;
+    width: 90%;
   }
   .middle .pss {
     font-size: 1.2rem;
