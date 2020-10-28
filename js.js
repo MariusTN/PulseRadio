@@ -34,5 +34,4 @@ setInterval(fetchStarship, 6000);
 
 //custom Particles
 
-particlesJS.load('particles-js', './particlesjs-config.json', function () {
-});
+particlesJS.load('particles-js', './particlesjs-config.json', () => {});

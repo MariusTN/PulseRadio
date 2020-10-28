@@ -23,6 +23,11 @@ body {
   top: 0px;
 }
 
+header h1 {
+  letter-spacing: 1.3rem;
+  font-weight: 600;
+}
+
 .bg {
   background-color: black;
 }
