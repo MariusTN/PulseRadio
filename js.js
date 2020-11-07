@@ -30,7 +30,7 @@ async function fetchStarship() {
 	pastSong9.innerHTML = `2. ${data.songs[8][1]}`;
 }
 
-fetchStarship()ș
+fetchStarship();
 setInterval(fetchStarship, 6000);
 
 //custom Particles
