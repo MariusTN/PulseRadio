@@ -1,3 +1,4 @@
+// Ugly but it's doing it's job w8 loops
 let titluMelodie = document.querySelector('.melodie');
 let titluArtist = document.querySelector('.artist');
 let titluMelodie2 = document.querySelector('.melodie1');
@@ -13,6 +14,7 @@ let pastSong8 = document.querySelector('.ps8');
 let pastSong9 = document.querySelector('.ps9');
 let pastSong0 = document.querySelector('.ps0');
 
+//Main Function
 async function fetchStarship() {
 	let response = await fetch('https://myradio24.com/users/2288/status.json');
 	let data = await response.json();
@@ -30,9 +32,14 @@ async function fetchStarship() {
 	pastSong9.innerHTML = `2. ${data.songs[8][1]}`;
 }
 
+//Updating DOM
 fetchStarship();
-setInterval(fetchStarship, 6000);
+
+//Interval for DOM update
+setInterval(fetchStarship, 20000);
+
+//Hi there {small gift for whoever will see this}
+console.log(`Console Check. Lol`);
 
 //custom Particles
-
 particlesJS.load('particles-js', './particlesjs-config.json', () => {});
